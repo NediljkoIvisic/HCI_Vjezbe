@@ -4,19 +4,12 @@ import styles from './style.module.css'
 
 const navTabs = ['Home', 'Accommodation', 'Photo Gallery', 'Contact']
 
-const NavigationBar = () => (
-    <nav className={styles.navigationBar}>
-      {navTabs.map(tab => {
-        if (tab === 'Home')
-        return (
-          <li className={styles.active}>
-            {tab}
-          </li>)
-        else
-          return <li>{tab}</li>
-        }
+const NavigationBar = props => (
+  <nav className={styles.navigationBar}>
+      {navTabs.map(tab => <li className={tab === props.activeTab ? styles.active : ''}>
+        {tab}</li>
       )}
-    </nav>
+  </nav>
 )
 
 export default NavigationBar

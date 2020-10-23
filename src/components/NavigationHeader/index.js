@@ -5,10 +5,10 @@ import Navigation from '../Navigation'
 
 import styles from './style.module.css'
 
-const NavigationHeader = () => (
+const NavigationHeader = props => (
     <section className={styles.navigationHeader}>
         <Logo />
-        <Navigation />
+        <Navigation activeTab={props.activeTab}/>
     </section>
 )
 
