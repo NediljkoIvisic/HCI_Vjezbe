@@ -1,7 +1,7 @@
 .navigationHeader {
-    height: 115px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 15px;
-    align-items: center;
-  }
+  height: 115px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+  align-items: center;
+}
