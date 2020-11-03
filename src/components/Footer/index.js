@@ -1,9 +1,9 @@
 import React from 'react'
-  import styles from './style.module.css'
+import styles from './style.module.css'
  
-  const navTabs = ['Home', 'Accommodation', 'Photo Gallery', 'Contact']
+const navTabs = ['Home', 'Accommodation', 'Photo Gallery', 'Contact']
  
-  const Footer = () => (
+const Footer = () => (
     <footer className={styles.footer}>
         <ul className={styles.address}>
             <li className={styles.title}>
@@ -22,6 +22,6 @@ import React from 'react'
             }
         </ul>
     </footer>
-  )
+)
  
-  export default Footer
+export default Footer
