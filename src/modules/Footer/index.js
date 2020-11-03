@@ -1,13 +1,13 @@
 import React from 'react'
 
-import NavigationBar from '../NavigationBar'
+import NavigationBar from '../../components/NavigationBar'
 import styles from './style.module.css'
  
 const Footer = () => (
     <footer className={styles.footer}>
         <ul className={styles.address}>
             <li className={styles.title}>
-                VILA OLIVA VERDE
+                VILLA OLIVA VERDE
             </li>
             <li>Štrped 24</li>
             <li>521000 Vinkuran</li>
