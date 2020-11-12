@@ -23,10 +23,10 @@ const ImagePool = ({start, end}) => {
         }
     `)
     return (
-    <div>
-        {data.myImages.edges.slice(start, end).map(edge =>
-          <Img fixed={edge.node.localFile.childImageSharp.fixed} />
-        )}
+    <div className={styles.imagePool}>
+      {data.myImages.edges.slice(start, end).map(edge => 
+        <Img fixed={edge.node.localFile.childImageSharp.fixed}/>
+      )}
     </div>
     )
 }
